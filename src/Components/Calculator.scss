@@ -72,10 +72,9 @@ body {
 
   /* Ajuste para o botão de modo (claro/escuro) */
   .mode-button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 10px;
     white-space: nowrap; /* Impede a quebra de linha no botão */
     display: inline-block; /* Permite que o botão ajuste o tamanho ao conteúdo */
     border-radius: 5px;

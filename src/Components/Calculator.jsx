@@ -36,13 +36,13 @@ function Calculator() {
       <h1>Calculadora Halloween</h1>
       <input
         type="number"
-        placeholder="Insira o número aqui"
+        placeholder="Insira aqui o seu número"
         value={num1}
         onChange={(e) => setNum1(e.target.value)}
       />
       <input
         type="number"
-        placeholder="Insira o número aqui"
+        placeholder="Insira aqui o seu número"
         value={num2}
         onChange={(e) => setNum2(e.target.value)}
       />
@@ -53,7 +53,7 @@ function Calculator() {
         <button onClick={() => handleCalculate('/')}>/</button>
         <button onClick={clearValues}>C</button>
         <button onClick={toggleMode} className="mode-button">
-  {isDarkMode ? 'Modo Claro' : 'Modo Escuro'}
+  {isDarkMode ? 'Light' : 'Dark'}
 </button>
 
       </div>
