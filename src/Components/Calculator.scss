@@ -1,24 +1,29 @@
-/* Fonte do Halloween */
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
 /* Estilos gerais */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Creepster', cursive;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease, background-image 0.5s ease; /* Transição suave para o fundo */
 }
 
 /* Modo Claro */
 .light-mode {
   background-color: #2a52be; /* Fundo azul para o modo claro */
   color: #ff4500; /* Texto laranja */
+  background-image: url('/src/assets/images/wallpaper-light.jpg'); /* Imagem de fundo para o modo claro */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Faz a imagem ficar fixa durante o rolar da página */
 }
 
 /* Modo Escuro */
 .dark-mode {
   background-color: #333333; /* Fundo escuro */
   color: #ff0000; /* Texto vermelho */
+  background-image: url('/src/assets/images/wallpaper-dark.png'); /* Imagem de fundo para o modo escuro */
+  background-size: cover; /* Faz com que a imagem cubra toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* Faz a imagem ficar fixa durante o rolar da página */
 }
 
 .calculator {
@@ -70,7 +75,6 @@ body {
     margin: 5px;
   }
 
-  /* Ajuste para o botão de modo (claro/escuro) */
   .mode-button {
     padding: 10px;
     font-size: 1rem;
@@ -81,20 +85,6 @@ body {
     width: auto; /* Ajusta a largura conforme o conteúdo */
     cursor: pointer;
     border: 1px solid #ccc; /* Borda padrão */
-  }
-
-  /* Modo Claro */
-  .light-mode .mode-button {
-    background-color: #fff; /* Cor de fundo para o Modo Claro */
-    color: #2a52be; /* Cor do texto para o Modo Claro */
-    border-color: #2a52be; /* Cor da borda para o Modo Claro */
-  }
-
-  /* Modo Escuro */
-  .dark-mode .mode-button {
-    background-color: #333; /* Cor de fundo para o Modo Escuro */
-    color: #ff4500; /* Cor do texto para o Modo Escuro */
-    border-color: #ff4500; /* Cor da borda para o Modo Escuro */
   }
 
   /* Responsividade */
@@ -116,7 +106,7 @@ body {
 
     .mode-button {
       font-size: 1rem;
-      width: 100%; /* Deixa o botão ocupar 100% da largura no modo responsivo */
+      width: 100%;
     }
   }
 
